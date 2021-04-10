@@ -1,0 +1,62 @@
+{
+    "OFFER": "Offer",
+    "ABOUT_US": "About Us",
+    "REGIONS": "Regions",
+    "TRANSPORTATION": "Transportation",
+    "RAILWAY": "Railway",
+    "TRUCK": "Truck",
+    "INTERMODAL_AND_PROJECT_CARGO": "Intermodal & Cargo",
+    "WAREHOUSES": "Warehouses",
+    "CONTACT": "Contact",
+    "PAGES": {
+        "TRANSPORTATION": {
+            "TRUCK": {
+                "TITLE": "Road freight",
+                "DESCRIPTION": "International road transportation is one of the emerging and growing directions in the field of freight transportation. Road transportation advantages are fast delivery, optimal selection of routes opportunity, permanent control on cargo and acceptable prices.",
+                "LIST_TITLE": "“New way Logistics” is offering you an international organization of the motor transportation service from any country in Asia, Europe and the South Caucasus countries, as well as internal transportation. Our services include:",
+                "LIST_ITEM_1": "• Door to door delivery to most world-wide locations",
+                "LIST_ITEM_2": "• Assembly and synchronous positioning of load units (JIT)",
+                "LIST_ITEM_3": "• Transportation of LTL, FTL and break bulk cargo",
+                "LIST_ITEM_4": "• Transportation of dangerous and perishable goods (Ref. Trucks)",
+                "LIST_ITEM_5": "• Domestic Trucking"
+            },
+            "RAILWAY": {
+                "TITLE": "Rail freight",
+                "SUB_TITLE": "Our services:",
+                "LIST_TITLE": "Rail transportation of all types of container",
+                "LIST_ITEM_1": "• Processing of cargo (unloading containers, restart of the cargo, hitching and fixing)",
+                "LIST_ITEM_2": "• Supply of the necessary rolling stock depending on the cargo",
+                "LIST_ITEM_3": "• Arrangement of customs duties",
+                "LIST_ITEM_4": "• Arrangement of customs transit declaration",
+                "LIST_ITEM_5": "• Informing about wagons location"
+            },
+            "INTERMODAL_AND_PROJECT_CARGO": {
+                "SEA": {
+                    "TITLE": "Sea freight",
+                    "SUB_TITLE": "Maritime transport is one of the most economical options for transporting large shipments.",
+                    "DESCRIPTION": "Container shipping involves delivery to the destination without reloading, without the risk of damage, even with the change of vehicle. On the fact of delivery of the cargo at the port, we provide an overload on road or rail transport with further delivery to the final recipient.",
+                    "LIST_TITLE": "TYPES OF SERVICES IN MARITIME TRANSPORT:",
+                    "LIST_ITEM_1": "• Sea freight",
+                    "LIST_ITEM_2": "• Container transport using direct and combined cargo delivery schemes",
+                    "LIST_ITEM_3": "• Delivery of oversized cargo in specialized containers, type: FR, OT",
+                    "LIST_ITEM_4": "• Terminal cargo handling in ports of departure and destination",
+                    "LIST_ITEM_5": "• Unloading / loading of the car, train wagon, river barges, sea / river vessel",
+                    "LIST_ITEM_6": "• Surveying inspection",
+                    "LIST_ITEM_7": "• Preferential storage in river and sea ports",
+                    "LIST_ITEM_8": "• Marking of cargo",
+                    "LIST_ITEM_9": "• Release of originals and copies of bills of lading",
+                    "LIST_ITEM_10": "• Release of FBL",
+                    "LIST_ITEM_11": "• Additional cargo insurance against all risks"
+                },
+                "AIR": {
+                    "TITLE": "Air Freight",
+                    "LIST_TITLE": "TYPES OF SERVICES IN MARITIME TRANSPORT:",
+                    "LIST_ITEM_1": "• Door to door delivery to most world-wide locations",
+                    "LIST_ITEM_2": "• Warehousing services, distribution and delivery.",
+                    "LIST_ITEM_3": "• World-wide Consolidation",
+                    "LIST_ITEM_4": "• Project work & flight chartering"
+                }
+            }
+        }
+    }
+}

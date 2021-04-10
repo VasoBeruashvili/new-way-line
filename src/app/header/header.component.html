@@ -1,0 +1,43 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="50px" fxLayout.lt-md="column"
+	fxLayoutAlign.lt-md="center center" fxLayoutGap.lt-md="30px" class="app-header">
+	<div>
+		<a routerLink="/">
+			<img src="assets/images/logo.png" width="150" alt="logo">
+		</a>
+	</div>
+
+	<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="30px" fxLayout.lt-md="column"
+		fxLayoutAlign.lt-md="center center" fxLayoutGap.lt-md="20px">
+		<a routerLink="/" [class.app-header-menu-item-active]="isActive('/')">{{'OFFER' | translate}}</a>
+		<a routerLink="/about" [class.app-header-menu-item-active]="isActive('/about')">{{'ABOUT_US' | translate}}</a>
+		<a routerLink="/regions" [class.app-header-menu-item-active]="isActive('/regions')">{{'REGIONS' |
+			translate}}</a>
+		<a>
+			<button mat-button [matMenuTriggerFor]="transportation"
+				[class.app-header-menu-item-active]="isActive('/transportation')">{{'TRANSPORTATION' |
+				translate}}</button>
+			<mat-menu #transportation="matMenu">
+				<button mat-menu-item routerLink="/transportation/railway">{{'RAILWAY' |
+					translate}}</button>
+				<button mat-menu-item routerLink="/transportation/truck">{{'TRUCK' |
+					translate}}</button>
+				<button mat-menu-item
+					routerLink="/transportation/intermodal-and-project-cargo">{{'INTERMODAL_AND_PROJECT_CARGO' |
+					translate}}</button>
+			</mat-menu>
+		</a>
+		<a routerLink="/warehouses" [class.app-header-menu-item-active]="isActive('/warehouses')">{{'WAREHOUSES' |
+			translate}}</a>
+		<a routerLink="/contact" [class.app-header-menu-item-active]="isActive('/contact')">{{'CONTACT' |
+			translate}}</a>
+	</div>
+
+	<div fxLayout="column" fxLayoutAlign="center center">
+		<a fxLayout="row" fxLayoutAlign="center center" routerLink="/live-tracking"
+			[class.app-header-menu-item-active]="isActive('/live-tracking')">
+			<img src="assets/images/live-tracking.png" width="40" alt="live-tracking">
+			Live Tracking
+		</a>
+		<p class="app-coming-soon">Coming Soon...</p>
+	</div>
+</div>

@@ -1,0 +1,142 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$new-way-line-primary: mat-palette($mat-indigo);
+$new-way-line-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$new-way-line-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$new-way-line-theme: mat-light-theme(
+  (
+    color: (
+      primary: $new-way-line-primary,
+      accent: $new-way-line-accent,
+      warn: $new-way-line-warn,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($new-way-line-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "App Font Caps";
+  src: url("assets/fonts/BPGExcelsiorCaps.woff2") format("woff2"),
+    url("assets/fonts/BPGExcelsiorCaps.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "App Font";
+  src: url("assets/fonts/BPGExcelsior.woff2") format("woff2"), url("assets/fonts/BPGExcelsior.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$app-caps-typography: mat-typography-config(
+  $font-family: "App Font Caps",
+  $headline: mat-typography-level(32px, 48px),
+  $body-1: mat-typography-level(14px, 24px),
+);
+
+$app-typography: mat-typography-config(
+  $font-family: "App Font",
+  $headline: mat-typography-level(32px, 48px),
+  $body-1: mat-typography-level(14px, 24px),
+);
+
+@include angular-material-typography($app-typography);
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+
+  background-color: #fff;
+  color: #353535;
+}
+
+.app-header {
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  padding-left: 9%;
+  padding-right: 9%;
+
+  background: rgb(215, 215, 215);
+  background: linear-gradient(
+    180deg,
+    rgba(215, 215, 215, 1) 0%,
+    rgba(242, 242, 242, 1) 70%,
+    rgba(253, 255, 255, 1) 100%
+  );
+  color: #353535;
+
+  border-bottom: 3px solid #f2f2f2;
+
+  a {
+    text-decoration: none;
+    color: #513a00;
+    font-weight: bold;
+
+    &:hover {
+      color: #e85a4f;
+    }
+  }
+
+  .app-header-menu-item-active {
+    color: #e85a4f;
+  }
+
+  .app-coming-soon {
+    font-size: 12px;
+  }
+}
+
+.app-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  padding-left: 10%;
+  padding-right: 10%;
+
+  overflow: hidden;
+
+  .app-sub-img {
+    opacity: 0.6;
+  }
+}
+
+.app-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  padding-left: 9%;
+  padding-right: 9%;
+
+  background: rgb(215, 215, 215);
+  background: linear-gradient(0deg, rgba(215, 215, 215, 1) 0%, rgba(242, 242, 242, 1) 70%, rgba(253, 255, 255, 1) 100%);
+  color: #513a00;
+
+  border-top: 3px solid #f2f2f2;
+}
